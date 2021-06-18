@@ -1,0 +1,6 @@
+package pjatk.mas;
+
+public class Menedzer {
+    private int /*??????????*/ Prowizja;
+    private int /*?????*/ MaksProwizja=20%;
+}
