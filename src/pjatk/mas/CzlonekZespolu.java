@@ -5,9 +5,11 @@ abstract class CzlonekZespolu {
     private String daneOsobowe;
     private int iloscKoncertowPrzedDolaczeniemDoZespolu;
     private int iloscKoncertowPoDolaczeniuDoZespolu;
-    private String /*wyliczalne*/iloscWszystkichKoncertow;
 
-    void oblicz_ilosc_wszystkich_koncertow(  )
+    int oblicz_ilosc_wszystkich_koncertow(  )
     {
+        return iloscKoncertowPrzedDolaczeniemDoZespolu+iloscKoncertowPoDolaczeniuDoZespolu;
+
+
     }
 }

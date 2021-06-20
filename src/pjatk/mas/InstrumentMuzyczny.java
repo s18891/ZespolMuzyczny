@@ -7,24 +7,30 @@ public abstract class InstrumentMuzyczny {
     private String nazwa;
     private String producent;
     private String rodzajMaterialu;
-    private int wiek;
-    private String stan {dobry, wymagajacy przegladu};
-    private Date ostatniegoPrzegladu;
+    private int rokProdukcji;
+    private String stan /* todo  enum: dobry, wymagajacy przegladu*/;
+    private Date dataOstatniegoPrzegladu;
 
     void zapiszWykonaniePrzegladu(  )
     {
+        dataOstatniegoPrzegladu= new Date(System.currentTimeMillis());
     }
 
-    void oznaczStan( stan )
+    void oznaczStan( String Stan )
     {
+        stan=Stan;
     }
 
-    void wyswietlInstrumentyWymagajacePrzegladu(  )
+    static void wyswietlInstrumentyWymagajacePrzegladu(Extencja extencja  )
     {
+        if(extencja.)
+
+            //todo xxxx
     }
 
-    void oznaczInstrumentyDoPrzegladu(  )
+    void oznaczInstrumentDoPrzegladu(  )
     {
+        stan = "wymagajacy przegladu";
     }
 }
 
